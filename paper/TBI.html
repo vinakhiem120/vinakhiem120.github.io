@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>viTBI-BERT: A Vietnamese Language Model for TBI Prediction</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <style>
+            /* Điều chỉnh toàn bộ bố cục */
+            body {
+
+                background-color: #f8f9fa;
+                color: #333;
+            }
+    
+            /* Điều chỉnh khoảng cách giữa sidebar và nội dung chính */
+            #main {
+                margin-left: 0; /* Giữ khoảng cách từ sidebar */
+                width: calc(100% - 260px); /* Đảm bảo nội dung không bị tràn */
+                max-width: 1000px; /* Giới hạn độ rộng tối đa */
+                padding: 90px;
+                display: flex;
+                justify-content: center; /* Căn giữa nội dung */
+            }
+    
+            /* Giới hạn chiều rộng nội dung chính */
+            /* Hộp chứa nội dung chính */
+            .container {
+                max-width: 900px; /* Đảm bảo nội dung không quá rộng */
+                width: 100%;
+                background: white;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            }
+    
+            /* Căn chỉnh tiêu đề chính */
+            h2 {
+                color: #007bff;
+                font-size: 32px;
+                margin-bottom: 15px;
+                text-align: center;
+                font-weight: bold;
+            }
+    
+            /* Tiêu đề nhỏ */
+            h3 {
+                margin-top: 30px;
+                font-size: 22px;
+                color: #007bff;
+                text-transform: uppercase;
+                border-bottom: 2px solid #007bff;
+                display: inline-block;
+                padding-bottom: 5px;
+            }
+    
+            /* Căn chỉnh văn bản */
+            p {
+                font-size: 18px;
+                text-align: justify;
+                margin-bottom: 15px;
+            }
+    
+            /* Điều chỉnh danh sách */
+            ul {
+                list-style-type: none;
+                padding: 0;
+            }
+    
+            ul li {
+                font-size: 18px;
+                margin-bottom: 8px;
+                padding-left: 25px; 
+                position: relative;
+            }
+    
+            /* Căn chỉnh hình ảnh */
+            .image-container {
+                text-align: center;
+                margin: 30px 0;
+            }
+    
+            .image-container img {
+                max-width: 100%;
+                border-radius: 10px;
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            }
+    
+            /* Nút Download PDF */
+            .download-btn {
+                display: block;
+                text-align: center;
+                width: 100%;
+                background: #007bff;
+                color: white;
+                padding: 15px;
+                font-size: 18px;
+                border-radius: 5px;
+                text-decoration: none;
+                margin-top: 20px;
+                font-weight: bold;
+                transition: 0.3s;
+            }
+    
+            .download-btn:hover {
+                background: #0056b3;
+                transform: translateY(-2px);
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <!-- Header -->
+        <div id="header">
+            <div class="top">
+
+                <!-- Logo -->
+                <div id="logo">
+                    <span class="image avatar48"><img src="../images/avatar.jpg" alt="" /></span>
+                    <h1 id="title">Doan Duc Khiem</h1>
+                </div>
+
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li><a href="../index.html#top" id="top-link"><span class="icon solid fa-home"></span> Intro</a></li>
+                        <li><a href="../research.html" id="research-papers-link"><span class="icon solid fa-book-open"></span> Research Papers</a></li>
+                        <li><a href="../index.html#language-studying" id="language-studying-link"><span class="icon solid fa-language"></span> Language Studying</a></li>
+                        <li><a href="../index.html#about" id="about-link"><span class="icon solid fa-user"></span> About Me</a></li>
+                        <li><a href="../index.html#contact" id="contact-link"><span class="icon solid fa-envelope"></span> Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="bottom">
+                <!-- Social Icons -->
+                <ul class="icons">
+                    <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+                    <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Main Content -->
+        <div class="container">
+            <h2>viTBI-BERT: A Vietnamese Language Model for TBI Prediction</h2>
+            
+            <p class="authors"><strong>Authors:</strong> Doan Duc Khiem, Thanh Hai Tran, Trung-Kien Tran, Thi-Lan Le, Hai Vu, Huu-Khanh Nguyen, Van Mao Can, Thanh Bac Nguyen</p>
+            <p class="affiliations"><strong>Affiliations:</strong> Hanoi University of Science and Technology, Military Institute of Science and Technology, Military Hospital 103, Vietnam Military Medical University</p>
+
+            <h3>Abstract</h3>
+            <p>Artificial Intelligence (AI) is transforming the prediction and classification of <strong>Traumatic Brain Injury (TBI)</strong>. Our research introduces <strong>viTBI-BERT</strong>, a novel <strong>Vietnamese language model</strong> based on <strong>ViHealthBERT</strong>, designed to classify <strong>TBI severity</strong> from <strong>medical text reports</strong>.</p>
+            
+            <p>The model is trained using a <strong>self-collected dataset</strong> from 503 patients at Military Hospital 103, Hanoi. We apply <strong>text preprocessing, data augmentation, and deep learning techniques</strong> to enhance classification accuracy. The model achieves <strong>71% sensitivity</strong> in classifying four severity levels: <strong>mild, moderate, severe, and critical</strong>.</p>
+
+            <h3>Introduction</h3>
+            <p>Traumatic Brain Injury (TBI) is a <strong>leading cause of disability</strong> worldwide. Traditional diagnostic approaches rely on <strong>CT scans, MRIs, and clinical assessment</strong>, which can be subjective and <strong>resource-intensive</strong>. AI-based models provide an <strong>alternative approach</strong> by analyzing <strong>textual medical notes</strong>, enabling more <strong>efficient and automated TBI classification</strong>.</p>
+
+            <h3>Methodology</h3>
+            <p>We propose <strong>viTBI-BERT</strong>, a deep learning model fine-tuned from <strong>ViHealthBERT</strong>. The pipeline includes:</p>
+            <ul style="text-align: left;">
+                <li>🔹 <strong>Preprocessing:</strong> Acronym normalization, special character removal, word segmentation.</li>
+                <li>🔹 <strong>Data Augmentation:</strong> Synonym replacement, back-translation, random word swap.</li>
+                <li>🔹 <strong>Model Architecture:</strong> A BERT-based transformer with a fully connected classification layer.</li>
+            </ul>
+
+            <!-- Image -->
+            <div class="image-container">
+                <img src="../images/procedure.png" alt="TBI Model Architecture">
+                <p><em>Figure 1: viTBI-BERT model architecture for TBI severity classification</em></p>
+            </div>
+
+            <h3>Results</h3>
+            <p>The model was evaluated on three datasets:</p>
+            <ul style="text-align: left;">
+                <li>📌 <strong>Pre-admission notes</strong>: Sensitivity <strong>67%</strong></li>
+                <li>📌 <strong>Post-discharge notes</strong>: Sensitivity <strong>68%</strong></li>
+                <li>📌 <strong>Combined dataset</strong>: Sensitivity <strong>71%</strong> (best performance)</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p>The <strong>viTBI-BERT</strong> model is a <strong>first-of-its-kind Vietnamese language model</strong> for <strong>TBI severity classification</strong> using <strong>medical notes</strong>. Future work will focus on <strong>integrating multimodal data</strong>, including <strong>clinical test results and imaging scans</strong>, to enhance predictive accuracy.</p>
+
+            <a href="../papers/TBI_B2024_09_ICTVN.pdf" class="download-btn" target="_blank">📥 Download Full Paper (PDF)</a>
+        </div>
+
+    </body>
+</html>
