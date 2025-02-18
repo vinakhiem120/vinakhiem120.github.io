@@ -83,12 +83,12 @@ input, select, textarea {
 	}
 
 	body {
-		background: #fff;
+		background: #ffffff;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 19pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #888;
+		color: #707070;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -104,15 +104,15 @@ input, select, textarea {
 
 	input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
-		font-weight: 300;
+		font-size: 21pt;
+		font-weight: 500;
 		line-height: 1.75em;
 		color: #888;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
-		color: #666;
+		color: #000000;
 		line-height: 1.5em;
 	}
 
@@ -175,7 +175,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #E27689;
+			color: #747474;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -2227,12 +2227,12 @@ input, select, textarea {
 				}
 
 				#main > section.dark strong {
-					color: #fff;
+					color: #ffffff;
 					border-color: inherit;
 				}
 
 				#main > section.dark a {
-					color: #fff;
+					color: #ffffff;
 					border-color: inherit;
 				}
 
@@ -2247,20 +2247,20 @@ input, select, textarea {
 			}
 
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-color: #ffffff;
+				background-image: url("../../images/theme.jpg");
 			}
 
 			#main > section.two {
-				background-color: #f5fafa;
+				background-color: #f7f7f7;
 			}
 
 			#main > section.three {
-				background-color: #ecf1f1;
+				background-color: #f3f3f3;
 			}
 
 			#main > section.four {
-				background-color: #e8edec;
+				background-color: #e6e6e6;
 			}
 
 /* Wide */
